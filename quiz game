@@ -1,0 +1,48 @@
+#Quiz game
+#All are must be in small alphabets
+
+print("Welcome to the Quiz Game")
+playing = input("Do you want to play??\n").lower()
+
+if playing!="yes":
+    quit()
+
+print("Ok Lets start the game")
+score=0
+answer=input("what does CPU stands for?\n").lower()
+if answer=="central processing unit":
+   print("Correct")
+   score=+1
+else:
+    print("Incorrect")
+
+answer=input("What does RAM stands for?\n").lower()
+if answer=="random access memory":
+   print("correct")
+   score=+2
+else:
+    print("Incorrect")
+
+answer=input("what does CD stands for?\n").lower()
+if answer=="compact disk":
+   print("Correct")
+   score=+3
+else:
+    print("Incorrect")
+
+answer=input("what does ROM stands for?\n").lower()
+if answer=="read only memory":
+   print("Correct")
+   score=+4
+else:
+    print("Incorrect")
+
+answer=input("what does BIOS stands for?\n").lower()
+if answer=="basic input output system":
+   print("Correct")
+   score=+5
+else:
+    print("Incorrect")
+
+
+print("you got" + " " + str(score) + " " + "question correct!")
